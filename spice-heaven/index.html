@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/logo.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>tomato-website</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rammetto+One&family=Rubik+Storm&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- First/Front Page -->
+  <div id="first_page"
+    class="relative bg-[linear-gradient(to_right,#B42929,#4E1212)] overflow-hidden w-full max-w-106.25 mx-auto min-h-dvh rounded-2xl ">
+    <h1 class="flex flex-col justify-center items-center h-112.5 font-['Rammetto_One'] text-4xl ">Spice Haven</h1>
+      <img id="burger_image" src="\src\assets\burger_sandwich_PNG4135 2.png" alt="burger image" class="absolute top-[88%] -bottom-62.5  transition-all
+      duration-1000 ease-out hover:top-[80%] hover:-translate-y-1/2">
+  </div>
+
+  <!-- Main/Menu Page -->
+
+  <div id="menu_page" class="hidden bg-white w-full max-w-106.25 mx-auto min-h-dvh rounded-2xl pt-10 border border-red-500">
+    <div class="flex flex-row space-x-42 ml-2 mr-2">
+      <h1 class="w-48.75 text-xl font-['Rammetto_One'] p-2">Spice Haven</h1>
+      <img src="\src\assets\Avatar.png" alt="Avatar" class="w-15 h-15 ">
+    </div>
+    <p class="px-2 -mt-5 font-sans italic">Order your Food here</p>
+
+    <!-- Search Bar -->
+    <div class="relative flex flex-row ml-2 mr-2">
+      <input type="text" placeholder="Search" class="bg-gray-300 rounded-2xl p-2 pl-10 mt-3">
+      <img src="\src\assets\Search.png" alt="" class="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4">
+      <img src="\src\assets\Setting Button.png" alt="Setting" class="ml-10.75">
+    </div>
+
+    <!-- Categories -->
+    <div class="flex flex-row font-sans gap-5 mt-4 overflow-x-auto ml-2 mr-2">
+      <p class="bg-red-800 text-white rounded-xl px-4 py-2 whitespace-nowrap">All</p>
+      <p class="bg-gray-300 text-gray-700 rounded-xl px-6 py-2 whitespace-nowrap">Combo</p>
+      <p class="bg-gray-300 text-gray-700 rounded-xl px-6 py-2 whitespace-nowrap">Slider</p>
+      <p class="bg-gray-300 text-gray-700 rounded-xl px-6 py-2 whitespace-nowrap">Classic</p>
+    </div>
+
+    <!-- Food Items -->
+    <div class="mt-10">
+      <!-- Grid  -->
+      <div class="grid grid-cols-2 mt-5">
+
+        <!-- Card 1 -->
+        <div class="bg-gray-300 rounded-2xl p-3 m-5">
+          <img src="\src\assets\burger_sandwich_PNG4135 2.png" alt="Burger Image"
+            class="w-full h-24 object-contain scale-125 mt-2">
+          <p class="font-sans font-bold italic -mt-2">Classic Beef </p>
+
+          <!-- Rating -->
+          <div class="flex flex-row m-2 items-center justify-between">
+            <p class="font-sans font-bold">⭐4.9</p>
+            <p>🖤</p>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="bg-gray-300 rounded-2xl p-3 m-5">
+          <img src="\src\assets\crispy-chicken.png" alt="Burger Image" class="w-full h-24 object-contain">
+          <p class="font-sans font-bold italic -mt-2">Crispy Chicken</p>
+
+          <!-- Rating -->
+          <div class="flex flex-row m-2 items-center justify-between">
+            <p class="font-sans font-bold">⭐4.6</p>
+            <p>🖤</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Card 3 -->
+      <div class="grid grid-cols-2 mt-5">
+        <div class="bg-gray-300 rounded-2xl p-3 m-5">
+          <img src="\src\assets\Double Cheese Burger.png" alt="Burger Image" class="w-full h-24 object-contain">
+          <p class="font-sans font-bold italic -mt-2">Double Cheese</p>
+
+          <!-- Rating -->
+          <div class="flex flex-row m-2 items-center justify-between">
+            <p class="font-sans font-bold">⭐4.7</p>
+            <p>🖤</p>
+          </div>
+
+        </div>
+
+        <!-- Card 4 -->
+        <div class="bg-gray-300 rounded-2xl p-3 m-5">
+          <img src="\src\assets\Hamburger.png" alt="Burger Image" class="w-full h-24 object-contain">
+          <p class="font-sans font-bold italic -mt-2">Cheese Hamburger</p>
+
+          <!-- Rating -->
+          <div class="flex flex-row m-2 items-center justify-between">
+            <p class="font-sans font-bold ">⭐4.5</p>
+            <p>🖤</p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class=" relative bg-red-800 w-full h-15 rounded-b-2xl">
+      <div
+        class="absolute -top-8 left-1/2 -translate-x-1/2 w-16 h-16 bg-red-800 rounded-full shadow-lg flex items-center justify-center">
+        <span class="text-black text-2xl font-bold">+</span>
+      </div>
+
+      <div class="flex flex-row items-center justify-around h-full px-6">
+        <img src="\src\assets\Icon.png" alt="Home" >
+        <img src="\src\assets\account_circle.png" alt="Account">
+        <img src="\src\assets\Message.png" alt="Message" class="to-white">
+        <img src="\src\assets\Heart.png" alt="Heart">
+      </div>
+
+    </footer>
+  </div>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>
